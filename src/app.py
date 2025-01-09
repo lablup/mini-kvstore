@@ -39,6 +39,12 @@ class KeyValue(BaseModel):
     key: str
     value: str
 
+
+@app.get("/health", status_code=204)
+def healt_check():
+    pass
+
+
 @app.post("/", dependencies=[Depends(verify_token)])
 def set_key(data: KeyValue):
     conn = sqlite3.connect(DATABASE)
