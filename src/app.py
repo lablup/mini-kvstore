@@ -94,7 +94,7 @@ def startup_event():
     init_db()
 
 
-if __name__ == "__main__":
+def main():
     import uvicorn
 
     uvicorn.run(
@@ -104,3 +104,7 @@ if __name__ == "__main__":
         ssl_certfile=os.environ.get("KVSTORE_SSL_CERT", None),
         ssl_keyfile=os.environ.get("KVSTORE_SSL_KEY", None),
     )
+
+
+if __name__ == "__main__":
+    main()
