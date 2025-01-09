@@ -20,6 +20,8 @@ KVSTORE_SSL_CERT=/path/to/fullchain.pem
 KVSTORE_SSL_KEY=/path/to/privkey.pem
 ```
 
+If you omit `KVSTORE_SSL_CERT` and `KVSTORE_SSL_KEY`, the server will run without SSL.
+
 Run `./run.sh` or `uv run server` as root.
 
 ## The API

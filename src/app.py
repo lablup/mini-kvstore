@@ -101,6 +101,6 @@ if __name__ == "__main__":
         app,
         host="0.0.0.0",
         port=int(os.environ["KVSTORE_PORT"]),
-        ssl_certfile=os.environ["KVSTORE_SSL_CERT"],
-        ssl_keyfile=os.environ["KVSTORE_SSL_KEY"],
+        ssl_certfile=os.environ.get("KVSTORE_SSL_CERT", None),
+        ssl_keyfile=os.environ.get("KVSTORE_SSL_KEY", None),
     )
