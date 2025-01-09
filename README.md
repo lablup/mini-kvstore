@@ -34,6 +34,7 @@ Run `./run.sh` or `uv run server` as root.
   - If the key does not exist, it returns 404.
 * Delete a key: `DELETE /?key={key}`
   - If the key does not exist, it returns 404.
+* Do the health check: `GET /health`
 
 ## Example
 
