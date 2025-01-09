@@ -3,9 +3,11 @@ A mini key-value store accessible via HTTP REST API for use in GitHub Actions
 
 ## Install
 
-Create a Python virtualenv (e.g., `python -m venv venv`) and activate it.
+Install using [uv](https://docs.astral.sh/uv/getting-started/):
 
-Run `pip install -e .`.
+```sh
+uv sync
+```
 
 ## Usage
 
@@ -18,7 +20,7 @@ KVSTORE_SSL_CERT=/path/to/fullchain.pem
 KVSTORE_SSL_KEY=/path/to/privkey.pem
 ```
 
-Run `./run.sh` as root.
+Run `./run.sh` or `uv run server` as root.
 
 ## The API
 

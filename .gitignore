@@ -163,3 +163,7 @@ cython_debug/
 
 # Data files
 data.db
+
+# IDE
+.vim
+.zed
